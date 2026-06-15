@@ -276,7 +276,7 @@ void Pipsolar::loop() {
           this->pv_current2_->publish_state(value_pv_current2_);
         }
         if (this->ac_input_voltage_r_) {
-          this->ac_input_voltage_r_->publish_state(ac_input_voltage_r_);
+          this->ac_input_voltage_r_->publish_state(value_ac_input_voltage_r_);
         }
         if (this->grid_voltage_) {
           this->grid_voltage_->publish_state(value_grid_voltage_);
