@@ -824,7 +824,7 @@ void Pipsolar::loop() {
             case 4:
               this->value_pv_current2_ = atoi(found) * 0.01f;
               break;
-            case 7:
+            case 8:
               this->value_ac_input_voltage_r_ = atoi(found) * 0.1f;
               break;
             case 11:
