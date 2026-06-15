@@ -62,6 +62,7 @@ class Pipsolar : public uart::UARTDevice, public PollingComponent {
   PIPSOLAR_SENSOR(pv_voltage2, QPIGS, float)
   PIPSOLAR_SENSOR(pv_current1, QPIGS, float)
   PIPSOLAR_SENSOR(pv_current2, QPIGS, float)
+  PIPSOLAR_SENSOR(ac_input_voltage_r, QPIGS, float)
   PIPSOLAR_SENSOR(component_max_temp, QPIGS, int)
   // PS Power status
   PIPSOLAR_SENSOR(pv_power1, PS17, int)
