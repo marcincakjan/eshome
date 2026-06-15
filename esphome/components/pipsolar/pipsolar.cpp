@@ -275,6 +275,9 @@ void Pipsolar::loop() {
         if (this->pv_current2_) {
           this->pv_current2_->publish_state(value_pv_current2_);
         }
+        if (this->ac_input_voltage_r_) {
+          this->ac_input_voltage_r_->publish_state(ac_input_voltage_r_);
+        }
         if (this->grid_voltage_) {
           this->grid_voltage_->publish_state(value_grid_voltage_);
         }
@@ -820,6 +823,9 @@ void Pipsolar::loop() {
               break;
             case 4:
               this->value_pv_current2_ = atoi(found) * 0.01f;
+              break;
+            case 7:
+              this->ac_input_voltage_r_ = atoi(found) * 0.1f;
               break;
             case 11:
               this->value_grid_frequency_ = atof(found) * 0.01f;
